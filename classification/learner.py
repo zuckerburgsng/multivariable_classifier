@@ -146,11 +146,11 @@ def main_learn(js_dirs=arg_obj['d'], js_dirs_validate=arg_obj['vd'], labels_vali
         - js_dirs: list of strings
             Directories containing the JS files to be analysed.
         - js_dirs_validate: list of strings
-            2 JS dir (1 benign, 1 malicious) to select the features with chi2.
+            4 JS dir (1 benign, 1 netsupport, 1 sagent, 1 sload) to select the features with chi2.
         - labels_validate: list of strings
             Labels of the 2 JS dir for the features selection process
         - labels_d: list of strings
-            Indicates the label's name of the directories considered: either benign or malicious.
+            Indicates the label's name of the directories considered: benign, netsupport, sagent or sload.
         - model_dir: String
             Path to store the model that will be produced.
             Default value being the folder JS-Analysis/Classification/.
